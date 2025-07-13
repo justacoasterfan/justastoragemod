@@ -1,0 +1,7 @@
+{
+  "creativetab.storage_tab": "justastoragemod",
+
+  "item.justastoragemod.storage_remote": "Storage Remote",
+  "block.justastoragemod.storage_cable": "Storage Cable",
+  "block.justastoragemod.storage_controller": "Storage Controller"
+}

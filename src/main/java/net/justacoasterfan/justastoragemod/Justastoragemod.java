@@ -1,6 +1,9 @@
 package net.justacoasterfan.justastoragemod;
 
 import com.mojang.logging.LogUtils;
+import net.justacoasterfan.justastoragemod.block.ModBlocks;
+import net.justacoasterfan.justastoragemod.item.ModCreativeModeTabs;
+import net.justacoasterfan.justastoragemod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +28,11 @@ public class Justastoragemod {
     public Justastoragemod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -38,6 +46,7 @@ public class Justastoragemod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
