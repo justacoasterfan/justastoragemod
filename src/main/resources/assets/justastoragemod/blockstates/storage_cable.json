@@ -1,7 +1,81 @@
 {
-  "variants": {
-    "": {
-      "model": "justastoragemod:block/storage_cable"
+  "multipart": [
+    {
+      "apply": {
+        "model": "justastoragemod:block/cable/core"
+      }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/north"
+      }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/south"
+      }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/east"
+      }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/west"
+      }
+    },
+    {
+      "when": { "up": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/up"
+      }
+    },
+    {
+      "when": { "down": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/down"
+      }
+    },
+    {
+      "when": { "north_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/north_connector"
+      }
+    },
+    {
+      "when": { "south_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/south_connector"
+      }
+    },
+    {
+      "when": { "east_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/east_connector"
+      }
+    },
+    {
+      "when": { "west_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/west_connector"
+      }
+    },
+    {
+      "when": { "up_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/up_connector"
+      }
+    },
+    {
+      "when": { "down_connector": "true" },
+      "apply": {
+        "model": "justastoragemod:block/cable/down_connector"
+      }
     }
-  }
+  ]
 }

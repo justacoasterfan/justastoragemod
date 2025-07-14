@@ -1,6 +1,8 @@
 package net.justacoasterfan.justastoragemod.block;
 
 import net.justacoasterfan.justastoragemod.Justastoragemod;
+import net.justacoasterfan.justastoragemod.block.custom.StorageCable;
+import net.justacoasterfan.justastoragemod.block.custom.StorageController;
 import net.justacoasterfan.justastoragemod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,10 +22,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Justastoragemod.MOD_ID);
 
     public static final RegistryObject<Block> STORAGE_CABLE = registerBlock("storage_cable",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new StorageCable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
     public static final RegistryObject<Block> STORAGE_CONTROLLER = registerBlock("storage_controller",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+            () -> new StorageController(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
